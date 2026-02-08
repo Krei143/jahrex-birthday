@@ -1,10 +1,12 @@
 'use client'
 
+import React from "react"
+
 import { useEffect } from 'react'
 import { GestureData } from '@/types/gesture'
 
 interface EnhancedControlsProps {
-  onGestureChange: (gesture: GestureData) => void
+  onGestureChange: React.Dispatch<React.SetStateAction<GestureData>>
 }
 
 export default function EnhancedControls({ onGestureChange }: EnhancedControlsProps) {
